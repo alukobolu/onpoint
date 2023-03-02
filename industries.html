@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boothstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css" >
+    <script src="boothstrap/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script> 
+    <script src="boothstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.1-web/css/all.css">
+   <script src="jquery/jquery-3.3.1.js"></script>
+   <script src="slick/slick.min.js"></script>
+   <script src="js/script.js"></script>
+   <!-- <script src="jquery/jquery-3.1.1.slim.min.js"></script> -->
+    <title>Onpoint</title>
+</head>
+<body>
+        <div class="top">
+            <div class="row">
+                <div class="row col-md-8 col-lg-9 col-sm-10 col-xs-12">
+                    <button><i class="fa fa-bars"></i></button>
+                    <h4 class="label-small">Onpoint</h4>
+                   <h6 class="label col-md-8 col-lg-9 col-sm-10 col-xs-12">Have any question? (234) 813 253 8036 DrSho@onpoint.com</h6>
+                   <div class="user smalluser col-md-4 col-lg-3 col-sm-2 col-xs-12">
+                    <span><i class="fas fa-user" style="color:rgb(61, 61, 61);"></i> 
+                        <!-- <a href="/onpoint/user/">Hello,user</a>  | <a href="/onpoint/logout" >Log out</a> -->
+                        <a href="/onpoint/login">Login</a>  | <a href="/onpoint/register" >Sign up</a>
+
+                    </span> 
+                  </div>
+                </div>
+                <div class="user biguser col-md-4 col-lg-3 col-sm-2 col-xs-12">
+                    <span><i class="fas fa-user" style="color:rgb(61, 61, 61);"></i> 
+                        
+                        <!-- <a href="/onpoint/user/">Hello,user</a>  | <a href="/onpoint/logout" >Log out</a> -->
+                        
+                        <a href="/onpoint/login">Login</a>  | <a href="/onpoint/register" >Sign up</a>
+                         
+                    </span> 
+                  </div>
+            </div>
+        </div>
+
+    <section class="main shadow ">
+        <div class="menu ">
+            <nav class="navbar navbar-expand-lg navbar-light " id="nav-bar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/onpoint">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="/onpoint/aboutus">ABOUT US </a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link" href="/onpoint/events">EVENTS</a>
+                    </li>
+                    <li class="nav-item active"> 
+                        <a class="nav-link" >SERVICES</a>
+                        <ul class="shadow" style="border-bottom:none;">
+                            <a href="/onpoint/stores"><li>Stores</li></a>
+                            <a href=""><li>Tele-Medicine</li></a>
+                            <a href="/onpoint/industries"><li>Phamatical Industries</li></a>
+                            <a href=""><li>Enquiry(help)</li></a>
+                        </ul> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/onpoint/product">PRODUCTS</a>
+                    </li>
+                    <form class="" action="#" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                            <button class="btn btn-outline-secondary"  type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var header = document.getElementById("nav-bar")
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 50.000) {
+                        $(".navbar").css("position" , "fixed");
+                        $(".navbar").css("top" , "0");
+                        header.classList.add("shadow");
+                    }
+              
+                    else{
+                        $(".navbar").css("position" , "sticky");
+                        $(".navbar").css("top" , "20px");
+                        header.classList.remove("shadow");
+                    }
+                })
+              })
+        </script>
+        <div class="product row">
+            <div class="col-xl-3 col-md-4 col-sm-4 col-lg-3 shadow">
+                <div class="list">
+                
+                    <div class="heading">CATEGORIES</div>
+                    <ul class="content">
+                        <a href=""><li> categories </li></a>
+                        <a href=""><li> categories </li></a>
+                        <a href=""><li> categories </li></a>
+                        <a href=""><li> categories </li></a>
+                        <a href=""><li> categories </li></a>
+                        <a href=""><li> categories </li></a>
+                    </ul>
+                    
+                </div>
+            </div>   
+            <div class="col-xl-8 col-sm-7 col-md-7  col-lg-8  mr-lg-3 mr-md-3  shadow product_show">
+               
+                <div class="content">
+                    
+                    <div class="row row-cols-2 row-cols-xs-3 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col mb-1 ">
+                            <div class="card h-100 shadow">
+                                <a href=""><img src="images/slider1.jpg" style="height: 100px;"  class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="card-text"> name ooo <br> price: 500000</span><br>
+                                    <button><a href="nameooo" class="card-text">READ MORE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="ending">
+                        <div class="pagination shadow">
+                            <a class=" prev" href="" tabindex="-1" aria-disabled="true">Previous</a>
+                            <a class=" next " href="">Next</a>
+                        </div>     
+                    </div>
+                </div>
+            </div> 
+              
+        </div>
+    </section>
+</body>
+<div class="footer shadow">
+    contacts: <a href="tel:+2348132538036">08132538036</a>,<a href="tel:+2348132538036">08132538036</a>
+</div>
+
+</html>
